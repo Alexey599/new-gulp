@@ -1,0 +1,42 @@
+{
+  "name": "new-gulp",
+  "version": "1.0.0",
+  "description": "new-dulp",
+  "scripts": {
+    "dev": "gulp watch",
+    "build:dev": "gulp build",
+    "build:prod": "gulp build --prod"
+  },
+  "lint-staged": {
+    "*.js": "eslint",
+    "*.pug": "pug-lint",
+    "*.scss": "stylelint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "keywords": [
+    "gulp",
+    "sass",
+    "pug",
+    "linters"
+  ],
+  "author": "makushin aleksey",
+  "license": "WTFPL",
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/eslint-parser": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/register": "^7.15.3",
+    "browser-sync": "^2.27.5",
+    "del": "^6.0.0",
+    "eslint": "^8.1.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.25.2",
+    "gulp": "^4.0.2",
+    "husky": "^7.0.4",
+    "lint-staged": "^11.2.4"
+  }
+}
