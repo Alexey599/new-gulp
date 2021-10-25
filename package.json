@@ -19,6 +19,7 @@
   },
   "keywords": [
     "gulp",
+    "js",
     "sass",
     "pug",
     "linters"
@@ -30,13 +31,20 @@
     "@babel/eslint-parser": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
     "@babel/register": "^7.15.3",
+    "babelify": "^10.0.0",
     "browser-sync": "^2.27.5",
+    "browserify": "^17.0.0",
     "del": "^6.0.0",
     "eslint": "^8.1.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.25.2",
     "gulp": "^4.0.2",
+    "gulp-if": "^3.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
     "husky": "^7.0.4",
-    "lint-staged": "^11.2.4"
+    "lint-staged": "^11.2.4",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
   }
 }
