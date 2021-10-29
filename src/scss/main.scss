@@ -1,0 +1,17 @@
+body {
+  display: flex;
+
+  background-color: aqua;
+}
+
+@media (max-width: 600px) {
+  body {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  div {
+    display: block;
+  }
+}
