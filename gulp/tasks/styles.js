@@ -10,7 +10,7 @@ import config from '../config';
 
 const sass = require('gulp-sass')(require('sass'));
 
-export const sassBuild = () =>
+export const sassBuild = () => (
   gulp
     .src(`${config.src.sass}/main.scss`)
     // .pipe(plumber())
@@ -25,6 +25,7 @@ export const sassBuild = () =>
       }),
     )
     .pipe(gulpif(config.isDev, sourcemaps.write()))
-    .pipe(gulp.dest(config.dest.css));
+    .pipe(gulp.dest(config.dest.css))
+);
 
 export const sassWatch = () => gulp.watch(`${config.src.sass}/**/*.scss`, sassBuild);
