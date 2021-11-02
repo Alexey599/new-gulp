@@ -4,7 +4,7 @@ import autoprefixer from 'gulp-autoprefixer';
 import gcmq from 'gulp-group-css-media-queries';
 import cleanCSS from 'gulp-clean-css';
 import rename from 'gulp-rename';
-import sourcemaps from 'gulp-sourcemaps';
+// import sourcemaps from 'gulp-sourcemaps';
 import gulpif from 'gulp-if';
 import config from '../config';
 
@@ -12,9 +12,9 @@ const sass = require('gulp-sass')(require('sass'));
 
 export const sassBuild = () => (
   gulp
-    .src(`${config.src.sass}/main.scss`)
+    .src(`${config.src.sass}/main.scss`, { sourcemaps: config.isDev })
     // .pipe(plumber())
-    .pipe(gulpif(config.isDev, sourcemaps.init()))
+    // .pipe(gulpif(config.isDev, sourcemaps.init()))
     .pipe(sass())
     .pipe(gulpif(config.isProd, gcmq()))
     .pipe(gulpif(config.isProd, autoprefixer()))
@@ -24,8 +24,8 @@ export const sassBuild = () => (
         suffix: '.min',
       }),
     )
-    .pipe(gulpif(config.isDev, sourcemaps.write()))
-    .pipe(gulp.dest(config.dest.css))
+    // .pipe(gulpif(config.isDev, sourcemaps.write()))
+    .pipe(gulp.dest(config.dest.css, { sourcemaps: config.isDev }))
 );
 
 export const sassWatch = () => gulp.watch(`${config.src.sass}/**/*.scss`, sassBuild);
