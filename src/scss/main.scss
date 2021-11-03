@@ -1,11 +1,8 @@
 // main
-// .js-focus-visible button:focus:not(.focus-visible) {
-//   box-shadow: none;
-// }
-
-// button:focus {
-//   box-shadow: 0 0 0 10px red;
-// }
-.test {
-  height: 500px;
-}
+@import './generated/smartgrid';
+@import './helpers/variables';
+@import './helpers/functions';
+@import './helpers/mixins';
+@import './base/base';
+@import './layout/**/*';
+@import './components/**/*';

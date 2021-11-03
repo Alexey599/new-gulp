@@ -55,12 +55,14 @@
     "gulp-pug": "^5.0.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.0.0",
+    "gulp-sass-glob": "^1.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-svg-sprite": "^1.5.0",
     "gulp-uglify": "^3.0.2",
     "husky": "^7.0.4",
     "imagemin-pngquant": "^9.0.1",
     "imagemin-webp": "^6.0.0",
+    "import-fresh": "^3.3.0",
     "lint-staged": "^11.2.4",
     "pug-lint": "^2.6.0",
     "sass": "^1.43.4",
@@ -74,6 +76,8 @@
   },
   "dependencies": {
     "focus-visible": "^5.2.0",
+    "normalize.css": "^8.0.1",
+    "smart-grid": "^2.1.2",
     "vanilla-lazyload": "^17.5.0"
   }
 }
