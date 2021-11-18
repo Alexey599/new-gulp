@@ -25,9 +25,10 @@
     "linters"
   ],
   "browserslist": [
-    ">0.1%",
-    "IE 11",
-    "last 5 version"
+    "> 1%",
+    "last 2 version",
+    "not dead",
+    "not IE 11"
   ],
   "author": "makushin aleksey",
   "license": "WTFPL",
@@ -60,10 +61,11 @@
     "gulp-svg-sprite": "^1.5.0",
     "gulp-uglify": "^3.0.2",
     "husky": "^7.0.4",
-    "imagemin-pngquant": "^9.0.1",
+    "imagemin-pngquant": "^9.0.2",
     "imagemin-webp": "^6.0.0",
     "import-fresh": "^3.3.0",
     "lint-staged": "^11.2.4",
+    "pug-include-glob": "^0.4.3",
     "pug-lint": "^2.6.0",
     "sass": "^1.43.4",
     "stylelint": "^14.0.1",

@@ -1,5 +1,4 @@
 import gulp from 'gulp';
-// import '@babel/register';
 import config from './gulp/config';
 import clean from './gulp/tasks/clean';
 import server from './gulp/tasks/server';
@@ -32,5 +31,3 @@ export const watch = gulp.series(build,
     imagesWatch,
     spritesWatch,
   ));
-
-exports.stylesWatch = stylesWatch;
