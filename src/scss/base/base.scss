@@ -1,5 +1,10 @@
 @import 'normalize.css/normalize';
 
+@include font-face('Montserrat-Bold',  'Montserrat-Bold', 700);
+@include font-face('Montserrat-SemiBold',  'Montserrat-SemiBold', 600);
+@include font-face('Montserrat-Medium',  'Montserrat-Medium', 500);
+@include font-face('Impact',  'ofont.ru_Impact', 400);
+
 *,
 *::before,
 *::after {
